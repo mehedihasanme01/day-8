@@ -29,28 +29,160 @@
         </li>
         <li class="nav-item"><a href="#" class="nav-link">Gallery</a> </li>
     </ul>
-    <!--<ul class="navbar-nav">-->
-        <!--<li class="nav-item"><a href="#" class="nav-link">Login</a> </li>-->
-        <!--<li class="nav-item"><a href="#" class="nav-link">Sign Up</a> </li>-->
-    <!--</ul>-->
-            <form class="form-inline">
-                <input type="search" class="form-control">
-                <button type="submit " class="btn btn-outline-dark ml-2">Search</button>
-            </form>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#myModal">Login</a> </li>
+        <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#myModal">Sign Up</a> </li>
+    </ul>
+            <!--<form class="form-inline">-->
+                <!--<input type="search" class="form-control">-->
+                <!--<button type="submit " class="btn btn-outline-dark ml-2">Search</button>-->
+            <!--</form>-->
     </div>
     </div>
 </nav>
 
 <hr/>
 
+ <div class="container">
+     <div class="row">
+         <div class="col-sm-12">
+
+             <div id="mySlider" class="carousel slide" data-ride="carousel" data-interval="500">
+                 <ol class="carousel-indicators">
+                     <li class="active" data-target="#mySlider" data-slide-to="0"></li>
+                     <li class="" data-target="#mySlider" data-slide-to="1"></li>
+                     <li class="" data-target="#mySlider" data-slide-to="2"></li>
+                 </ol>
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
+                         <img class="d-block w-100" src="images/photo.jpg" alt=""/>
+                         <div class="carousel-caption ">
+                             <h3>Iron Man</h3>
+                             <p>Avengers hero</p>
+                         </div>
+                     </div>
+
+                     <div class="carousel-item">
+                         <img class="d-block w-100" src="images/photo12.jpg" alt=""/>
+                         <div class="carousel-caption ">
+                             <h3>Iron Man</h3>
+                             <p>Avengers hero</p>
+                         </div>
+                     </div>
+
+                     <div class="carousel-item">
+                         <img class="d-block w-100"  src="images/photo2.jpg" alt=""/>
+                         <div class="carousel-caption ">
+                             <h3>Iron Man</h3>
+                             <p>Avengers hero</p>
+                         </div>
+                     </div>
+                 </div>
+                 <a href="#mySlider" class="carousel-control-prev" data-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                 </a>
+                 <a href="#mySlider" class="carousel-control-next" data-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                 </a>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Click Me</button>
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Some content about modal header</h3>
+                <div class="container">
+                <div class="row">
+                <div class="col-sm-4">
+                <hr/>
+
+                <form action="#" method="get">
+                <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="first_name" id="firstName" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="last_name" id="lastName" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label>email</label>
+                <input type="email" name="email_address" id="emailAddress" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label>password</label>
+                <input type="password" name="password" id="password" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label>Phone Number</label>
+                <input type="number" name="phone_number"  class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" name="date_of_birth"  class="form-control">
+                </div>
+                <div class="form-group">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                <div class="form-group">
+                <label>Address</label>
+                <textarea name="address" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+
+
+                <select name="district_name" class="form-control">
+                <option>---Select District---</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="barisal">Barisal</option>
+                <option value="narayanganj">Narayanganj</option>
+                <option value="noakhali">Noakhali</option>
+                </select>
+
+
+                </div>
+                <div class="form-group">
+                <label>Image</label>
+                <input type="file" name="image" multiple accept="image/*">
+                </div>
+
+
+                <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" name="agree" value="agree" class="form-check-input">I agree with all terms & Condition!
+                </label>
+                </div>
+                <div class="form-group">
+                <input type="submit" name="btn" class="btn btn-info btn-block" value="Submit Button ">
+                </div>
+
+
+                </form>
+                </div>
+
+
+
+
+
+
+
+
                 <button class="close" data-dismiss="modal">
-                    &cross;
+                    &times;
                 </button>
             </div>
             <div class="modal-body">
@@ -66,7 +198,7 @@
 
 
 <script src="js/jquery-3.2.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/popper.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
